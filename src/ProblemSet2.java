@@ -131,28 +131,28 @@ public class ProblemSet2 {
          * and inches.
          */
 
-         System.out.print("\nEnter a number of inches: ");
-         double inches = in.nextDouble();
-
-         final double MILE = 63360;
-         final double YARD = 36;
-         final double FOOT = 12;
-
-         double miles = Math.floor(inches / MILE);
-         inches %= MILE;
-
-         double yards = Math.floor(inches / YARD);
-         inches %= YARD;
-
-         double feet = Math.floor(inches / FOOT);
-         inches %= FOOT;
-
-         inches = Math.floor(inches);
-
-         System.out.printf("\n%s %.0f\n", "MILES  :", miles);
-         System.out.printf("%s %.0f\n", "YARDS  :", yards);
-         System.out.printf("%s %.0f\n", "FEET   :", feet);
-         System.out.printf("%s %.0f\n", "INCHES :", inches);
+         // System.out.print("\nEnter a number of inches: ");
+         // double inches = in.nextDouble();
+         //
+         // final double MILE = 63360;
+         // final double YARD = 36;
+         // final double FOOT = 12;
+         //
+         // double miles = Math.floor(inches / MILE);
+         // inches %= MILE;
+         //
+         // double yards = Math.floor(inches / YARD);
+         // inches %= YARD;
+         //
+         // double feet = Math.floor(inches / FOOT);
+         // inches %= FOOT;
+         //
+         // inches = Math.floor(inches);
+         //
+         // System.out.printf("\n%s %.0f\n", "MILES  :", miles);
+         // System.out.printf("%s %.0f\n", "YARDS  :", yards);
+         // System.out.printf("%s %.0f\n", "FEET   :", feet);
+         // System.out.printf("%s %.0f\n", "INCHES :", inches);
 
         /*
          * Exercise 5.
@@ -161,7 +161,23 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
 
+         System.out.print("\nEnter a number of centimeters: ");
+         double centimeters = in.nextDouble();
 
+         final double KILOMETER = 100000;
+         final double METER = 100;
+
+         double kilometers = Math.floor(centimeters / KILOMETER);
+         centimeters %= KILOMETER;
+
+         double meters = Math.floor(centimeters / METER);
+         centimeters %= METER;
+
+         centimeters = Math.floor(centimeters);
+
+         System.out.printf("\n%s %.0f\n", "KILOMETERS  :", kilometers);
+         System.out.printf("%s %.0f\n", "METERS \t    :", meters);
+         System.out.printf("%s %.0f\n", "CENTIMETERS :", centimeters);
 
         /*
          * Exercise 6.
