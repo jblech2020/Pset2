@@ -161,23 +161,23 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
 
-         System.out.print("\nEnter a number of centimeters: ");
-         double centimeters = in.nextDouble();
-
-         final double KILOMETER = 100000;
-         final double METER = 100;
-
-         double kilometers = Math.floor(centimeters / KILOMETER);
-         centimeters %= KILOMETER;
-
-         double meters = Math.floor(centimeters / METER);
-         centimeters %= METER;
-
-         centimeters = Math.floor(centimeters);
-
-         System.out.printf("\n%s %.0f\n", "KILOMETERS  :", kilometers);
-         System.out.printf("%s %.0f\n", "METERS \t    :", meters);
-         System.out.printf("%s %.0f\n", "CENTIMETERS :", centimeters);
+         // System.out.print("\nEnter a number of centimeters: ");
+         // double centimeters = in.nextDouble();
+         //
+         // final double KILOMETER = 100000;
+         // final double METER = 100;
+         //
+         // double kilometers = Math.floor(centimeters / KILOMETER);
+         // centimeters %= KILOMETER;
+         //
+         // double meters = Math.floor(centimeters / METER);
+         // centimeters %= METER;
+         //
+         // centimeters = Math.floor(centimeters);
+         //
+         // System.out.printf("\n%s %.0f\n", "KILOMETERS  :", kilometers);
+         // System.out.printf("%s %.0f\n", "METERS \t    :", meters);
+         // System.out.printf("%s %.0f\n", "CENTIMETERS :", centimeters);
 
         /*
          * Exercise 6.
@@ -185,7 +185,15 @@ public class ProblemSet2 {
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
 
+         System.out.print("\nEnter a diameter: ");
+         double diameter = in.nextDouble();
+         double radius = diameter / 2;
 
+         double area = Math.PI * (Math.pow(radius, 2));
+         double circumference = 2 * Math.PI * radius;
+
+         System.out.printf("\n%s %.2f\n", "AREA\t      :", area);
+         System.out.printf("%s %.2f\n", "CIRCUMFERENCE :", circumference);
 
         /*
          * Exercise 7.
