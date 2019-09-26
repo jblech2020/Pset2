@@ -202,19 +202,18 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
 
-         System.out.print("\nEnter a length: ");
-         double length = in.nextDouble();
-         System.out.print("Enter a width: ");
-         double width = in.nextDouble();
-
-         double rectArea = length * width;
-         double perimeter = (2 * length) + (2 * width);
-         double diagonal = Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
-
-         System.out.printf("\n%s %.2f\n", "AREA\t  :", rectArea);
-         System.out.printf("%s %.2f\n", "PERIMETER :", perimeter);
-         System.out.printf("%s %.2f\n", "DIAGONAL  :", diagonal);
-
+         // System.out.print("\nEnter a length: ");
+         // double length = in.nextDouble();
+         // System.out.print("Enter a width: ");
+         // double width = in.nextDouble();
+         //
+         // double rectArea = length * width;
+         // double rectPerimeter = (2 * length) + (2 * width);
+         // double diagonal = Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
+         //
+         // System.out.printf("\n%s %.2f\n", "AREA\t  :", rectArea);
+         // System.out.printf("%s %.2f\n", "PERIMETER :", rectPerimeter);
+         // System.out.printf("%s %.2f\n", "DIAGONAL  :", diagonal);
 
         /*
          * Exercise 8.
@@ -222,7 +221,14 @@ public class ProblemSet2 {
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
 
+         System.out.print("\nEnter a side length: ");
+         double sideLength = in.nextDouble();
 
+         double hexArea = ((3 * Math.sqrt(3)) / 2) * Math.pow(sideLength, 2);
+         double hexPerimeter = 6 * sideLength;
+
+         System.out.printf("\n%s %.2f\n", "AREA\t  :", hexArea);
+         System.out.printf("%s %.2f\n", "PERIMETER :", hexPerimeter);
 
         /*
          * Exercise 9.
