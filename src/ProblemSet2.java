@@ -1,4 +1,4 @@
-/**
+/*
  * Problem Set 2.
  *
  * It's time to put your skills to the test. This problem set focuses on prompting
@@ -56,34 +56,34 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
-         System.out.print("Enter a dollar amount: ");
-         double dollarAmt = in.nextDouble();
-
-         final double DOLLAR = 1;
-         final double QUARTER = .25;
-         final double DIME = .1;
-         final double NICKEL = .05;
-         final double PENNY = .01;
-
-         int dollars = Math.floor(dollarAmt / DOLLAR);
-         double leftOver = dollarAmt % DOLLAR;
-
-         int quarters = Math.floor(leftOver / QUARTER);
-         leftOver %= QUARTER;
-
-         int dimes = Math.floor(leftOver / DIME);
-         leftOver %= DIME;
-
-         int nickels = Math.floor(leftOver / NICKEL);
-         leftOver %= NICKEL;
-
-         int pennies = Math.floor(leftOver / PENNY);
-
-         System.out.println("\nDOLLARS \t: " + dollars);
-         System.out.println("QUARTERS : " + quarters);
-         System.out.println("DIMES \t: " + dimes);
-         System.out.println("NICKELS \t: " + nickels);
-         System.out.println("PENNIES \t: " + pennies);
+         // System.out.print("Enter a dollar amount: ");
+         // double dollarAmt = in.nextDouble();
+         //
+         // final double DOLLAR = 1;
+         // final double QUARTER = .25;
+         // final double DIME = .1;
+         // final double NICKEL = .05;
+         // final double PENNY = .01;
+         //
+         // double dollars = Math.floor(dollarAmt / DOLLAR);
+         // double leftOver = dollarAmt % DOLLAR;
+         //
+         // double quarters = Math.floor(leftOver / QUARTER);
+         // leftOver %= QUARTER;
+         //
+         // double dimes = Math.floor(leftOver / DIME);
+         // leftOver %= DIME;
+         //
+         // double nickels = Math.floor(leftOver / NICKEL);
+         // leftOver %= NICKEL;
+         //
+         // double pennies = Math.ceil(leftOver / PENNY);
+         //
+         // System.out.printf("\n%s %.0f\n", "DOLLARS  :", dollars);
+         // System.out.printf("%s %.0f\n", "QUARTERS :", quarters);
+         // System.out.printf("%s %.0f\n", "DIMES \t :", dimes);
+         // System.out.printf("%s %.0f\n", "NICKELS  :", nickels);
+         // System.out.printf("%s %.0f\n", "PENNIES  :", pennies);
 
         /*
          * Exercise 3.
