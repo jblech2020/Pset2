@@ -56,7 +56,7 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
-         // System.out.print("Enter a dollar amount: ");
+         // System.out.print("\nEnter a dollar amount: ");
          // double dollarAmt = in.nextDouble();
          //
          // final double DOLLAR = 1;
@@ -77,8 +77,8 @@ public class ProblemSet2 {
          // double nickels = Math.floor(leftOver / NICKEL);
          // leftOver %= NICKEL;
          //
-         // double pennies = Math.ceil(leftOver / PENNY);
-         //
+         // double pennies = Math.floor(leftOver / PENNY);
+
          // System.out.printf("\n%s %.0f\n", "DOLLARS  :", dollars);
          // System.out.printf("%s %.0f\n", "QUARTERS :", quarters);
          // System.out.printf("%s %.0f\n", "DIMES \t :", dimes);
@@ -92,7 +92,37 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
-
+         // System.out.print("\nEnter a dollar amount: ");
+         // dollarAmt = in.nextDouble();
+         //
+         // final double TEN_DOLLAR = 10;
+         // final double FIVE_DOLLAR = 5;
+         //
+         // double tenDollars = Math.floor(dollarAmt / TEN_DOLLAR);
+         // leftOver = dollarAmt % TEN_DOLLAR;
+         //
+         // double fiveDollars = Math.floor(leftOver / FIVE_DOLLAR);
+         // leftOver %= FIVE_DOLLAR;
+         //
+         // dollars = Math.floor(leftOver / DOLLAR);
+         // leftOver %= DOLLAR;
+         //
+         // quarters = Math.floor(leftOver / QUARTER);
+         // leftOver %= QUARTER;
+         //
+         // dimes = Math.floor(leftOver / DIME);
+         // leftOver %= DIME;
+         //
+         // nickels = Math.floor(leftOver / NICKEL);
+         // leftOver %= NICKEL;
+         //
+         // pennies = Math.floor(leftOver / PENNY);
+         //
+         // double bills = tenDollars + fiveDollars + dollars;
+         // double coins = quarters + dimes + nickels + pennies;
+         //
+         // System.out.printf("\n%s %.0f\n", "BILLS :", bills);
+         // System.out.printf("%s %.0f\n", "COINS :", coins);
 
         /*
          * Exercise 4.
@@ -101,7 +131,28 @@ public class ProblemSet2 {
          * and inches.
          */
 
+         System.out.print("\nEnter a number of inches: ");
+         double inches = in.nextDouble();
 
+         final double MILE = 63360;
+         final double YARD = 36;
+         final double FOOT = 12;
+
+         double miles = Math.floor(inches / MILE);
+         inches %= MILE;
+
+         double yards = Math.floor(inches / YARD);
+         inches %= YARD;
+
+         double feet = Math.floor(inches / FOOT);
+         inches %= FOOT;
+
+         inches = Math.floor(inches);
+
+         System.out.printf("\n%s %.0f\n", "MILES  :", miles);
+         System.out.printf("%s %.0f\n", "YARDS  :", yards);
+         System.out.printf("%s %.0f\n", "FEET   :", feet);
+         System.out.printf("%s %.0f\n", "INCHES :", inches);
 
         /*
          * Exercise 5.
