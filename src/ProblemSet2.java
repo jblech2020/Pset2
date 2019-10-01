@@ -28,7 +28,7 @@ public class ProblemSet2 {
          * name, grade, age, and hometown.
          */
 
-         System.out.print("Enter your first name: ");
+         System.out.print("\nEnter your first name: ");
          String firstName = in.next();
 
          System.out.print("Enter your last name: ");
@@ -47,7 +47,7 @@ public class ProblemSet2 {
          System.out.println("\nNAME \t : " + firstName + " " + lastName);
          System.out.println("GRADE \t : " + grade);
          System.out.println("AGE \t : " + age);
-         System.out.println("HOMETOWN : " + hometown + "\n");
+         System.out.println("HOMETOWN : " + hometown);
 
         /*
          * Exercise 2.
@@ -235,6 +235,7 @@ public class ProblemSet2 {
          *
          * Given a string, reverse and print the first and second halves of that string.
          */
+         in.nextLine();
 
          System.out.print("\nEnter a String: ");
          String userInput = in.nextLine();
